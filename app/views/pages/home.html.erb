@@ -1,3 +1,8 @@
+<% if user_signed_in? %>
+	#show them something
+<% else %>
+
+
 <div class="hero-unit">
 
 	<h1>Lintbury!</h1>
@@ -8,7 +13,7 @@
 	</p>
 
 	</p>
-		<%= link_to "Sign Up", "#", class: "btn btn-primary btn-large" %>
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-large" %>
 	</p>
 
 
@@ -19,3 +24,4 @@
 		</small>
 	<div>
 </div>
+<% end %>
